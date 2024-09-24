@@ -29,8 +29,8 @@ To run this project, you need to have Python installed. Follow these steps to se
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/well-being-watch.git
-    cd well-being-watch
+    https://github.com/Ashmil114/Well-Being-Watch.git
+    cd Well-Being-Watch
     ```
 
 2. Create a virtual environment and activate it:
