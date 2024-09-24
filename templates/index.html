@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Well Being Watch</title>
+</head>
+<body>
+    <p class="logo">Well Being Watch</p>
+    {% if result %}
+    <h1>Mental Health: {{result}}</h1>
+    {% endif %}
+    {% if error %}
+    <h2>{{error}}</h2>
+    {% endif %}
+    <form  method="post">
+        <label for="sadness">Sadness:</label>
+        <select id="sadness" name="sadness">
+            <option value="seldom">seldom</option>
+            <option value="sometimes">sometimes</option>
+            <option value="usually">usually</option>
+            <option value="most-often">most-often</option>
+        </select>
+        <br><br>
+
+        <label for="euphoric">Euphoric:</label>
+        <select id="euphoric" name="euphoric">
+            <option value="seldom">seldom</option>
+            <option value="sometimes">sometimes</option>
+            <option value="usually">usually</option>
+            <option value="most-often">most-often</option>
+        </select>
+        <br><br>
+
+        <label for="exhausted">Exhausted:</label>
+        <select id="exhausted" name="exhausted">
+            <option value="seldom">seldom</option>
+            <option value="sometimes">sometimes</option>
+            <option value="usually">usually</option>
+            <option value="most-often">most-often</option>
+        </select>
+        <br><br>
+
+        <label for="sleep-disorder">Sleep disorder:</label>
+        <select id="sleep-disorder" name="sleep-disorder">
+            <option value="seldom">seldom</option>
+            <option value="sometimes">sometimes</option>
+            <option value="usually">usually</option>
+            <option value="most-often">most-often</option>
+        </select>
+        <br><br>
+
+
+        <div>
+            <label>Mood Swing:</label>
+            <input type="radio" name="mood_swing" value="yes"> Yes
+            <input type="radio" name="mood_swing" value="no"> No
+        </div>
+        <div>
+            <label>Suicidal Thoughts:</label>
+            <input type="radio" name="suicidal_thoughts" value="yes"> Yes
+            <input type="radio" name="suicidal_thoughts" value="no"> No
+        </div>
+        <div>
+            <label>Anorexia:</label>
+            <input type="radio" name="anorexia" value="yes"> Yes
+            <input type="radio" name="anorexia" value="no"> No
+        </div>
+        <div>
+            <label>Authority Respect:</label>
+            <input type="radio" name="authority_respect" value="yes"> Yes
+            <input type="radio" name="authority_respect" value="no"> No
+        </div>
+        <div>
+            <label>Try-Explanation:</label>
+            <input type="radio" name="try_explanation" value="yes"> Yes
+            <input type="radio" name="try_explanation" value="no"> No
+        </div>
+        <div>
+            <label>Aggressive Response:</label>
+            <input type="radio" name="aggressive_response" value="yes"> Yes
+            <input type="radio" name="aggressive_response" value="no"> No
+        </div>
+        <div>
+            <label>Ignore & Move-On:</label>
+            <input type="radio" name="ignore_move_on" value="yes"> Yes
+            <input type="radio" name="ignore_move_on" value="no"> No
+        </div>
+        <div>
+            <label>Nervous Break-down:</label>
+            <input type="radio" name="nervous_breakdown" value="yes"> Yes
+            <input type="radio" name="nervous_breakdown" value="no"> No
+        </div>
+        <div>
+            <label>Admit Mistakes:</label>
+            <input type="radio" name="admit_mistakes" value="yes"> Yes
+            <input type="radio" name="admit_mistakes" value="no"> No
+        </div>
+        <div>
+            <label>Overthinking:</label>
+            <input type="radio" name="overthinking" value="yes"> Yes
+            <input type="radio" name="overthinking" value="no"> No
+        </div>
+
+        <label for="sexual-activity">Sexual Activity:</label>
+        <select id="sexual-activity" name="sexual-activity">
+            <option value="1 from 10">1 from 10</option>
+            <option value="2 from 10">2 from 10</option>
+            <option value="3 from 10">3 from 10</option>
+            <option value="4 from 10">4 from 10</option>
+            <option value="5 from 10">5 from 10</option>
+            <option value="6 from 10">6 from 10</option>
+            <option value="7 from 10">7 from 10</option>
+            <option value="8 from 10">8 from 10</option>
+            <option value="9 from 10">9 from 10</option>
+        </select>
+        <br><br>
+
+        <label for="concentration">Concentration:</label>
+        <select id="concentration" name="concentration">
+            <option value="1 from 10">1 from 10</option>
+            <option value="2 from 10">2 from 10</option>
+            <option value="3 from 10">3 from 10</option>
+            <option value="4 from 10">4 from 10</option>
+            <option value="5 from 10">5 from 10</option>
+            <option value="6 from 10">6 from 10</option>
+            <option value="7 from 10">7 from 10</option>
+            <option value="8 from 10">8 from 10</option>
+            <option value="9 from 10">9 from 10</option>
+        </select>
+        <br><br>
+
+        <label for="optimism">Optimism:</label>
+        <select id="optimism" name="optimism">
+            <option value="1 from 10">1 from 10</option>
+            <option value="2 from 10">2 from 10</option>
+            <option value="3 from 10">3 from 10</option>
+            <option value="4 from 10">4 from 10</option>
+            <option value="5 from 10">5 from 10</option>
+            <option value="6 from 10">6 from 10</option>
+            <option value="7 from 10">7 from 10</option>
+            <option value="8 from 10">8 from 10</option>
+            <option value="9 from 10">9 from 10</option>
+        </select>
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    
+    
+        
+    <style>
+        
+        form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+select, input[type="radio"] {
+    margin-bottom: 20px;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+input[type="radio"] + label {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+br {
+    display: none;
+}
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 2em;
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+}
+h2 {
+    text-align: center;
+    color: #f00a15;
+    font-size: 2em;
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+}
+.logo {
+    text-align: center;
+    color: #5ef00a;
+    font-weight: bolder;
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+
+    </style>
+</body>
+</html>

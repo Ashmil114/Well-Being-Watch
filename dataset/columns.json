@@ -1,0 +1,41 @@
+{
+  "data": [
+    "Sadness",
+    "Euphoric",
+    "Exhausted",
+    "Sleep dissorder",
+    
+    "Mood Swing",
+    "Suicidal thoughts",
+    "Anorxia",
+    "Authority Respect",
+    "Try-Explanation",
+    "Aggressive Response",
+    "Ignore & Move-On",
+    "Nervous Break-down",
+    "Admit Mistakes",
+    "Overthinking",
+    "Sexual Activity",
+    "Concentration",
+    "Optimisim"
+  ],
+  "example_feature": [
+    "Usually",
+    "Seldom",
+    "Sometimes",
+    "Sometimes",
+    "YES",
+    "YES ",
+    "NO",
+    "NO",
+    "YES",
+    "NO",
+    "NO",
+    "YES",
+    "YES",
+    "YES",
+    "3 From 10",
+    "3 From 10",
+    "4 From 10"
+  ]
+}
