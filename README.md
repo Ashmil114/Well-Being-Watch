@@ -47,7 +47,7 @@ To run this project, you need to have Python installed. Follow these steps to se
 ## Usage
 
 1. Train the model:
-    
+    Use Jupyter Notebook (dataset/Train Model.ipynb)
 
 2. Run the Flask app:
     ```bash
